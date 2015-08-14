@@ -12,3 +12,56 @@ Tags:
 
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css');
+
+ul{
+	font-size: 18px;
+	width: 110px;
+	padding-left: 0px;
+}
+.nav_Text{
+	text-align: center;
+	font-size: 18px;
+}
+.row{
+	margin-bottom: 30px;
+}
+#bigpuppy{
+	width: 45%;
+	height: 45%;
+}
+#col-sm-6 col-md-5{
+	display: flex;
+}
+#content{
+	padding-left: 12.5%;
+	padding-top: 55px;
+}
+#header{
+	margin-top: 45px;
+	padding-left: 8.33%;
+	display: flex;
+}
+#logo{
+	width: 405px;
+	height: 104px;
+}
+#menu{
+	display: flex;
+	margin-left: 2.78%;
+	padding-top: 42px;
+}
+#menu_content{
+	display: none;
+	text-align: left;
+	font-size: 15px;
+	padding-left: 15px;
+	padding-right: 30px;
+	padding-top: 5px;
+	width: 145px;
+}
+#search{
+	width: 95px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+

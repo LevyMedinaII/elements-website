@@ -1,89 +1,78 @@
 <!DOCTYPE html>
+<!--Elements Home Page Created by Levy V. Medina II-->
 <html lang='en'>
 <head>
         <meta charset="utf-8">
-        <!--
-        LEADERSHIP AND STRATEGY
-        FINANCE AND ACCOUNTING
-        QUANTITIVE METHODS AND INFORMATION TECHNOLOGY
-        MARKETING AND LAW
-        DONT ASK WHY THIS IS HERE
-        <link href="css/reset.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/navstyle.css" rel="stylesheet" type="text/css">
-        
-        <script src="js/jquery-1.8.2.min.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/script.js"></script>
-        -->
-
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<<<<<<< HEAD
+=======
 
         <!-- 
         insert this line when index.html is renamed to index.php
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
         -->
 
+>>>>>>> origin/master
         <title>Elements</title>
 </head>
 <body>
-        <div id = "header">
-                <div id = "header_Logo"> Put the head logo in here IYKWIM </div>
-                <div id = "menu">
-                        <ul class = "nav_Text"> Home </ul> 
-                        <ul class = "nav_Text"> Sections
-                                <li> Buhay Celedon </li>
-                                <li> Features </li>
-                                <li> Opinion </li>
-                                <li> Reviews </li>
-                        </ul>
-                        <ul class = "nav_Text"> About Us </ul>
-                        <ul class = "nav_Text"> Celadon </ul>
-                        <ul class = "nav_Text"> Past Issues </ul>
-                        <div> Search image here </div>
-                </div>
+    <div id = "header">
+        <img src = "images/logo.png" id = "logo">
+        <div id = "menu">
+            <ul class = "nav_Text"> Home </ul> 
+            <a onmouseover = "toggle_visibility('menu_content');"> <ul class = "nav_Text"> Sections </a>                                
+                <span id = "menu_content">
+                    <li> Buhay Celadon </li>
+                    <li> Features </li>
+                    <li> Opinion </li>
+                    <li> Reviews </li>
+                </span>
+            </ul>
+            <ul class = "nav_Text"> About Us </ul>
+            <ul class = "nav_Text"> Celadon </ul>
+            <ul class = "nav_Text"> Past Issues </ul>
+            <div class = "nav_Text" id = "search"> *Search* </div>
         </div>
+    </div>
+    <div id = "content">
         <div class="row">
-                <div class="col-sm-6 col-md-11">
-                        <div class="thumbnail">
-                                <img src="..." alt="...">
-                                <div class="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>     
-                                                <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a>
-                                        </p>
-                                </div>
+            <div class="col-sm-6 col-md-10">
+                <div class="thumbnail">
+                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                        <div class="caption">
+                            <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
                 </div>
+            </div>
         </div>
         <div class="row">
-                <div class="col-sm-6 col-md-5">
-                        <div class="thumbnail">
-                                <img src="..." alt="...">
-                                <div class="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>     
-                                                <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a>
-                                        </p>
-                                </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="thumbnail">
+                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                        <div class="caption">
+                            <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
                 </div>
-        </div>
-        <div class="row">
-                <div class="col-sm-6 col-md-5">
-                        <div class="thumbnail">
-                                <img src="..." alt="...">
-                                <div class="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>     
-                                                <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a>
-                                        </p>
-                                </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="thumbnail">
+                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                        <div class="caption">
+                            <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
                 </div>
+            </div>
         </div>
+    </div>
 </body>
+<script type = "text/javascript">
+    function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+        }
+</script>
+</html>
