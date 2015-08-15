@@ -14,9 +14,9 @@ Tags:
 @import url('bootstrap/css/bootstrap-responsive.css');
 
 ul{
-	font-size: 18px;
+/*	font-size: 18px;
 	width: 110px;
-	padding-left: 0px;
+	padding-left: 0px;*/
 }
 .nav_Text{
 	text-align: center;
@@ -37,9 +37,9 @@ ul{
 	padding-top: 55px;
 }
 #header{
-	margin-top: 45px;
+/*	margin-top: 45px;
 	padding-left: 8.33%;
-	display: flex;
+	display: flex;*/
 }
 #logo{
 	width: 405px;
