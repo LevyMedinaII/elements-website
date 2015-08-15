@@ -1,40 +1,13 @@
-<!DOCTYPE html>
 <!--Elements Home Page Created by Levy V. Medina II-->
-<html lang='en'>
-<head>
+<?php get_header(); ?>
+
         <meta charset="utf-8">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<<<<<<< HEAD
-=======
-
-        <!-- 
-        insert this line when index.html is renamed to index.php
+        
+        
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-        -->
-
->>>>>>> origin/master
-        <title>Elements</title>
-</head>
+        
 <body>
-    <div id = "header">
-        <img src = "images/logo.png" id = "logo">
-        <div id = "menu">
-            <ul class = "nav_Text"> Home </ul> 
-            <a onmouseover = "toggle_visibility('menu_content');"> <ul class = "nav_Text"> Sections </a>                                
-                <span id = "menu_content">
-                    <li> Buhay Celadon </li>
-                    <li> Features </li>
-                    <li> Opinion </li>
-                    <li> Reviews </li>
-                </span>
-            </ul>
-            <ul class = "nav_Text"> About Us </ul>
-            <ul class = "nav_Text"> Celadon </ul>
-            <ul class = "nav_Text"> Past Issues </ul>
-            <div class = "nav_Text" id = "search"> *Search* </div>
-        </div>
-    </div>
+    
     <div id = "content">
         <div class="row">
             <div class="col-sm-6 col-md-10">
