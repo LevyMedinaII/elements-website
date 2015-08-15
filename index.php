@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-10">
                 <div class="thumbnail">
-                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                    <img alt="Elements Magazine" id="bigpuppy" " src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-5">
                 <div class="thumbnail">
-                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                    <img alt="Elements Magazine" id="bigpuppy" " src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="col-sm-6 col-md-5">
                 <div class="thumbnail">
-                    <img src="images/placepuppy.jpg" alt="..." id = "bigpuppy">
+                    <img alt="Elements Magazine" id="bigpuppy" " src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>

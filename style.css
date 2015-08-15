@@ -12,6 +12,7 @@ Tags:
 
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css');
+@import url('bootstrap/css/custom.css');
 
 ul{
 /*	font-size: 18px;
@@ -42,8 +43,8 @@ ul{
 	display: flex;*/
 }
 #logo{
-	width: 405px;
-	height: 104px;
+	width: 350px;
+	height: 90px;
 }
 #menu{
 	display: flex;
@@ -65,3 +66,6 @@ ul{
 	margin-bottom: 10px;
 }
 
+#icon{
+	width:40px;
+}
