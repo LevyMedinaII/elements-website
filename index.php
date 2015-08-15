@@ -1,9 +1,7 @@
-<!--Elements Home Page Created by Levy V. Medina II-->
 <?php get_header(); ?>
 
         <meta charset="utf-8">
-        
-        
+              
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
         
 <body>
@@ -30,7 +28,7 @@
             </div>
             <div class="col-sm-6 col-md-5">
                 <div class="thumbnail">
-                    <img alt="Elements Magazine" id="bigpuppy" " src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
+                    <img alt="Elements Magazine" id="bigpuppy" src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
