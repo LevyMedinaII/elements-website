@@ -1,11 +1,14 @@
 #custom-bootstrap-menu{
 	height: 150px;
-	background-color: transparent;
+	background-color: white;
 	border: none;
 	
 }
 
 li.nav-item{
-	font-size:25px;
-	font-color: red;
+	font-size: 18px;
+	margin-right: 40px;
+	margin-left: 40px;
+	
 }
+

@@ -43,8 +43,8 @@ ul{
 	display: flex;*/
 }
 #logo{
-	width: 350px;
-	height: 90px;
+	width: 400px;
+	
 }
 #menu{
 	display: flex;
@@ -69,3 +69,22 @@ ul{
 #icon{
 	width:40px;
 }
+
+body {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 200px;
+}
+
+.navbar-default .navbar-collapse {
+	padding-top:150px;
+	background-color: white;
+}
+
+.nav > li > a.icon {
+	padding: 0px 5px;
+}
+
+
+
+
