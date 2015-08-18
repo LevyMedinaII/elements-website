@@ -13,9 +13,12 @@
 
 <div class="container">
     <div id = "content">
+    <?php while(have_posts()) :the_post(); ?>
+
         <div class="row">
             <div class="col-sm-6 col-md-10">
                 <div class="thumbnail">
+                    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
                     <img alt="Elements Magazine" id="bigpuppy" src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
@@ -23,10 +26,11 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+    <?php endwhile; ?>
+        <!--<div class="row">
             <div class="col-sm-6 col-md-5">
                 <div class="thumbnail">
-                    <img alt="Elements Magazine" id="bigpuppy" src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
+                    <img alt="Elements Magazine" id="bigpuppy" src="<?php /*echo*/ get_bloginfo(/*'template_url'*/) ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
@@ -34,13 +38,13 @@
             </div>
             <div class="col-sm-6 col-md-5">
                 <div class="thumbnail">
-                    <img alt="Elements Magazine" id="bigpuppy" src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
+                    <img alt="Elements Magazine" id="bigpuppy" src="<?php /*echo*/ get_bloginfo(/*'template_url'*/) ?>/images/placepuppy.jpg"/>
                         <div class="caption">
                             <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
                         </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     </div>
 </body>
