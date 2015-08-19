@@ -32,11 +32,11 @@
 				
 	      		<ul class="nav navbar-nav ">
 	      			
-	      			<li class="nav-item"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+	      			<li class="nav-item"><a href="http://localhost/wordpress">HOME<span class="sr-only">(current)</span></a></li>
 	      			<li class="dropdown nav-item" >
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
-	      					<li><a href="#">Buhay Celadon</a></li>
+	      					<li><a href="http://localhost/wordpress/buhay-celadon">Buhay Celadon</a></li>
 	      					<li><a href="#">Traditions</a></li>
 	      					<li><a href="#">Language</a></li>
 	      					<li><a href="#">Lifestyle</a></li>
