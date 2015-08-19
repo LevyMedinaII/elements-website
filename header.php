@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-<div id="wrapper">
+<div class="wrapper">
 <div id="header">
 
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="custom-bootstrap-menu">
@@ -59,14 +59,7 @@
 	      		
 				
 				<br><br><br>
-				<div class="navbar-right">
-					<ul class="nav navbar-nav">
-						<li style=" font-size: 18px;">Follow Us: </li>
-						<li><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook.png"/></a></li>
-						<li><a class="icon" href="https://twitter.com/ElementsCeladon"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/twitter.png"/></a></li>
-						<li><a class="icon" href="#"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></a></li>
-					</ul>
-				</div>
+				
 	      	</div>
 	    </div>
 	</nav>
