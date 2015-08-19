@@ -23,7 +23,7 @@
                     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
                     <img alt="Elements Magazine" id="bigpuppy" src="<?php echo get_bloginfo('template_url') ?>/images/placepuppy.jpg"/>
                         <div class="caption">
-                            <p> <a href="#" class="btn btn-default" role="button">Button</a> </p>
+                            <p> <a href="<?php the_permalink() ?>" class="btn btn-default" role="button">Read</a> </p>
                         </div>
                 </div>
             </div>
