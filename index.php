@@ -13,7 +13,7 @@
 
 <?php if (is_home()): ?>
 
-<div class="container-fluid">
+<div class="container">
     <div id = "content">
     <?php while(have_posts()) :the_post(); ?>
 
