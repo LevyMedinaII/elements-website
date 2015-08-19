@@ -13,7 +13,7 @@
 
 <?php if (is_home()): ?>
 
-<div class="container">
+<div class="container-fluid">
     <div id = "content">
     <?php while(have_posts()) :the_post(); ?>
 
@@ -51,9 +51,7 @@
     </div>
     <?php endif; ?>
 
-    <?php if (is_single()): ?>
-        <h1 class="article-title"><?php the_title(); ?></h1>
-    <?php endif; ?>
+
 </body>
 <script type = "text/javascript">
     function toggle_visibility(id) {

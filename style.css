@@ -89,5 +89,22 @@ body {
 	padding-top:50px;
 }
 
+/*.website {
+	padding-left: 50px;
+	padding-right: 50px;
+}*/
 
 
+#custom-bootstrap-menu{
+	height: 150px;
+	background-color: white;
+	border: none;
+	
+}
+
+li.nav-item{
+	font-size: 18px;
+	margin-right: 26.5spx;
+	margin-left: 26.5px;
+	
+}
