@@ -11,6 +11,8 @@
     <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<?php if (is_home()): ?>
+
 <div class="container">
     <div id = "content">
     <?php while(have_posts()) :the_post(); ?>
@@ -47,6 +49,11 @@
         </div>-->
     </div>
     </div>
+    <?php endif; ?>
+
+    <?php if (is_single()): ?>
+        <h1 class="article-title"><?php the_title(); ?></h1>
+    <?php endif; ?>
 </body>
 <script type = "text/javascript">
     function toggle_visibility(id) {
@@ -59,4 +66,8 @@
 </script>
 <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
 </html>
+
+
