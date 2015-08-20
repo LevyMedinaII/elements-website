@@ -5,6 +5,9 @@ Template Name: Article Page
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="container">
 <h2 class="article-title"><?php the_title(); ?></h2> 
+<?php if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+}  ?>
  <?php the_content(); ?>
  <?php echo get_the_date(); ?>
 

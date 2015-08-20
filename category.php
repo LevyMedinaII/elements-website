@@ -19,6 +19,7 @@ Template Name: Category Page
 <?php query_posts('category_name='.get_permalink().'&post_status=publish,future');?>
 
 <?php if (have_posts()) : ?>
+  <div class="row">
 <?php while (have_posts()) : the_post(); ?>
 
 <?php if (function_exists('wp_list_comments')): ?>
@@ -27,7 +28,10 @@ Template Name: Category Page
 <?php else : ?>
 <div class="topPost">
 <?php endif; ?>
-
+<div class="col-md-4">
+  <?php if ( has_post_thumbnail() ) {
+  the_post_thumbnail();
+}  ?>
   <h2 class="topTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
   <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
   <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
@@ -35,10 +39,10 @@ Template Name: Category Page
   <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
   <a class="topMore btn btn-default" href="<?php the_permalink() ?>">Read More...</a>
 <div class="cleared"></div>
-</div> <!-- Closes topPost --><br />
-
+</div> <!-- Closes topPost -->
+</div>
 <?php endwhile; ?>
-
+</div>
 <?php else : ?>
 
 <div class="topPost">
