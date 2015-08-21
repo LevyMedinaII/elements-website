@@ -49,7 +49,8 @@ if (function_exists('has_post_thumbnail')) {
 <?php else :
 $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
 <?php endif; ?>
-<div id="category-name" class="post-box" style="background-image: url('<?php echo $image[0]; ?>')">
+
+<div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
 
 
   <div class="post-inside">
@@ -61,7 +62,9 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
     <a class="topMore btn btn-default" href="<?php the_permalink() ?>">Read More...</a> -->
   </div>
 <div class="cleared"></div>
+
 </div> <!-- Closes topPost -->
+
 </div>
 </div>
 <?php endwhile; ?>
