@@ -19,7 +19,7 @@
     <?php if (has_post_thumbnail( $post->ID ) ): ?>
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
     <?php else :
-    $image = get_bloginfo('template_url','/images/placepuppyjpg'); ?>
+    $image = get_bloginfo('template_url') . '/images/placepuppyjpg'; ?>
     <?php endif; ?>
         <div class="row">
             <div class="col-sm-6 col-md-10">
@@ -94,7 +94,7 @@
 <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
+<?php get_footer(); ?>
 </html>
 
 
