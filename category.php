@@ -28,18 +28,41 @@ Template Name: Category Page
 <?php else : ?>
 <div class="topPost">
 <?php endif; ?>
-<div class="col-md-4">
+<?php $postid = get_the_ID(); ?> 
+<!-- <?php
+$thumbnail = '';
+if (function_exists('has_post_thumbnail')) {
+    if ( has_post_thumbnail() ) {
+         $thumbnail = get_the_post_thumbnail($postid->ID,'thumbnail');
+    }
+
+}
+?>
+
+  <div class="post-box" style="background-image: url('<?php echo $thumbnail; ?>')">
   <?php if ( has_post_thumbnail() ) {
-  the_post_thumbnail();
-}  ?>
-  <h2 class="topTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-  <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
-  <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
-  <span class="topComments btn btn-default"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span>
-  <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
-  <a class="topMore btn btn-default" href="<?php the_permalink() ?>">Read More...</a>
+  
+}  ?> -->
+<div class="col-md-4">
+<?php if (has_post_thumbnail( $post->ID ) ): ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+<?php else :
+$image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
+<?php endif; ?>
+<div id="category-name" class="post-box" style="background-image: url('<?php echo $image[0]; ?>')">
+
+
+  <div class="post-inside">
+    <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+    <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
+    <!-- <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
+    <span class="topComments btn btn-default"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span>
+    <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
+    <a class="topMore btn btn-default" href="<?php the_permalink() ?>">Read More...</a> -->
+  </div>
 <div class="cleared"></div>
 </div> <!-- Closes topPost -->
+</div>
 </div>
 <?php endwhile; ?>
 </div>
