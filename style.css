@@ -148,10 +148,11 @@ li.nav-item{
 	text-decoration: none;
 }
 
-.topTitle:hover {
+.topTitle:hover, .topMeta:hover {
 	color:gray;
 }
 
-a.post {
-	display:block;
+.topMeta:link, .topMeta:visited {
+	color:black;
+	text-decoration: none;
 }
