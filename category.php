@@ -10,7 +10,7 @@ Template Name: Category Page
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="topPost">
-  <h2 class="pageTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+  <h2 class="pageTitle"> <!-- <a class="pageTitle" href="<?php the_permalink() ?>"> --> <?php the_title(); ?> <!-- </a> --> </h2>
   <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
 <div class="cleared"></div>
 </div>
@@ -89,5 +89,19 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
 <div class="cleared"></div>
 
 </div><!-- Closes Main -->
+<script type = "text/javascript">
+    function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+        }
+</script>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <?php get_footer(); ?>

@@ -37,8 +37,8 @@
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
 	      					<li><a href="http://localhost/wordpress/buhay-celadon">Buhay Celadon</a></li>
-	      					<li><a href="#">Traditions</a></li>
-	      					<li><a href="#">Language</a></li>
+	      					<li><a href="http://localhost/wordpress/traditions">Traditions</a></li>
+	      					<li><a href="http://localhost/wordpress/language/">Language</a></li>
 	      					<li><a href="#">Lifestyle</a></li>
 	      					<li><a href="#">People</a></li>
 	      					<li><a href="#">Voices</a></li>

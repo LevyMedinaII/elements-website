@@ -1,6 +1,6 @@
 <!--Elements Home Page Created by Levy V. Medina II-->
 <?php get_header(); ?>
-<body
+<body>
         <meta charset="utf-8">
         
         
@@ -66,15 +66,7 @@
     </div>
     </div>
     <?php endif; ?>
-<div class="navbar-right">
-                    <ul class="nav navbar-nav">
 
-                        <li style=" font-size: 18px;">Follow Us: </li>
-                        <li><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook.png"/></a></li>
-                        <li><a class="icon" href="https://twitter.com/ElementsCeladon"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/twitter.png"/></a></li>
-                        <li><a class="icon" href="#"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></a></li>
-                    </ul>
-                </div>
                 <!-- <div class="btn-group" role="group" aria-label="...">
   <a href="https://www.facebook.com/CeladonElementsMagazine" type="button" class="btn btn-default btn-icon"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook.png"/></a>
   <button type="button" class="btn btn-default">Middle</button>
