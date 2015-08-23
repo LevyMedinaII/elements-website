@@ -3,6 +3,7 @@ Template Name: Category Page
 */ ?>
 
 <?php get_header(); ?>
+<body>
 
 <div id="main">
 
@@ -55,7 +56,7 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
 
   <div class="post-inside">
     <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-    <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
+    <!-- <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p> -->
     <!-- <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
     <span class="topComments btn btn-default"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span>
     <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
@@ -89,19 +90,8 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
 <div class="cleared"></div>
 
 </div><!-- Closes Main -->
-<script type = "text/javascript">
-    function toggle_visibility(id) {
-        var e = document.getElementById(id);
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        else
-            e.style.display = 'block';
-        }
-</script>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+
+
 
 <?php get_footer(); ?>
