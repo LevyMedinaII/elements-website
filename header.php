@@ -2,13 +2,13 @@
 <head>
 <title>Elements Magazine: Ateneo Celadon's Official Publication</title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-<meta charset="utf-8">
+<!-- <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-
+ -->
 <div class="wrapper">
 <div id="header">
 
@@ -65,12 +65,12 @@
 	</div>
 </div>
 </head>
-<script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-        $(this).collapse('hide');
-    }
-});
-    </script>
+// <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+//     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+//     <script type="text/javascript">
+//     $(document).on('click','.navbar-collapse.in',function(e) {
+//     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+//         $(this).collapse('hide');
+//     }
+// });
+//     </script>

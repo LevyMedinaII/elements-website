@@ -1,16 +1,7 @@
 <!--Elements Home Page Created by Levy V. Medina II-->
 <?php get_header(); ?>
 <body>
-        <meta charset="utf-8">
-        
-        
-        <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-        <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+       
 <?php if (is_home()): ?>
 
 <div class="container">
@@ -74,17 +65,9 @@
 </div> -->
 
 </body>
-<script type = "text/javascript">
-    function toggle_visibility(id) {
-        var e = document.getElementById(id);
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        else
-            e.style.display = 'block';
-        }
-</script>
-<script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+// <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+//     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <?php get_footer(); ?>
 </html>
