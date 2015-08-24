@@ -36,24 +36,14 @@
 	      			<li class="dropdown nav-item" >
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
-	      					<!-- <li><a href="http://localhost/wordpress/buhay-celadon">Buhay Celadon</a></li>
-	      					<li><a href="http://localhost/wordpress/traditions">Traditions</a></li>
-	      					<li><a href="http://localhost/wordpress/language/">Language</a></li>
-	      					<li><a href="#">Lifestyle</a></li>
-	      					<li><a href="#">People</a></li>
-	      					<li><a href="#">Voices</a></li>
-	      					<li><a href="#">Skills</a></li>
-	      					<li><a href="#">Partners</a></li> -->
 	      					<?php wp_list_categories('title_li='); ?>
 	      				</ul>
 	      			</li>
 	      			<li class="nav-item"><a href="#">ABOUT US</a></li>
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
-	      			<form class="navbar-form navbar-left" role="search" >
-					        
-				        	<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-					</form>
+	      			<li class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+	      			
 	      		</ul>
 	      		
 				
