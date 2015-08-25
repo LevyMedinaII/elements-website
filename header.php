@@ -43,8 +43,17 @@
 	      			<li class="nav-item"><a href="#">ABOUT US</a></li>
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
-	      			<li class="btn btn-danger btn-lg" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<form><input type='text'/></form>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+	      			<li>
 	      			
+	      			<li class="btn btn-danger btn-lg search-button" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+	      			<br>
+	      			<form class="navbar-form navbar-right" role="search">
+        				<div class="form-group">
+          					<input type="text" class="form-control" placeholder="Search">
+        				</div>
+        			<button type="submit" class="btn btn-default">Submit</button>
+      				</form>
+      				</li>
 	      		</ul>
 	      		
 				
