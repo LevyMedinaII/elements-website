@@ -3,16 +3,20 @@ Template Name: Article Page
 */ ?>
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="container">
-<h2 class="article-title"><?php the_title(); ?></h2>
-<div class="article-content">
+<div class="container article">
+	<br>
+
+<br>
 <div class="article-pic">
 	<?php if ( has_post_thumbnail() ) {
-	the_post_thumbnail(array(1100,1100));
+	the_post_thumbnail(array(840,840));
 
 	}  ?>
 </div>
-<br>
+<div class="article-content">
+
+<h2 class="article-title"><?php the_title(); ?></h2>
+<hr>
 	 <?php the_content(); ?>
  <?php echo get_the_date(); ?>
 </div> 
