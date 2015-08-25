@@ -43,7 +43,7 @@
 	      			<li class="nav-item"><a href="#">ABOUT US</a></li>
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
-	      			<li id="popover" class="btn btn-danger btn-lg" data-toggle="popover" data-html="true" rel="popover" data-placement="bottom" data-content="<form><input type='text'/></form>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+	      			<li class="btn btn-danger btn-lg" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<form><input type='text'/></form>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
 	      			
 	      		</ul>
 	      		
