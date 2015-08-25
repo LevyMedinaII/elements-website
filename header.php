@@ -44,7 +44,7 @@
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
 	      			<li>
-	      			
+
 	      			<li class="btn btn-danger btn-lg search-button" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
 	      			<br>
 	      			<form class="navbar-form navbar-right" role="search">
@@ -67,9 +67,9 @@
 </head>
 
 
-// <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
-//     
-//     <script type="text/javascript">
+ <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
 //     $(document).on('click','.navbar-collapse.in',function(e) {
 //     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
 //         $(this).collapse('hide');

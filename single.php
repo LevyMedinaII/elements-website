@@ -3,13 +3,13 @@ Template Name: Article Page
 */ ?>
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="container article">
-	<br>
+<div class="container">
 
-<br>
+<div class="wrapper">
+<div class="article">
 <div class="article-pic">
 	<?php if ( has_post_thumbnail() ) {
-	the_post_thumbnail(array(840,840));
+	the_post_thumbnail(array(920,920));
 
 	}  ?>
 </div>
@@ -17,9 +17,11 @@ Template Name: Article Page
 
 <h2 class="article-title"><?php the_title(); ?></h2>
 <hr>
-	 <?php the_content(); ?>
+ 	 <?php the_content(); ?>
  <?php echo get_the_date(); ?>
+ </div>
 </div> 
+</div>
 
 <?php endwhile; ?>
 <?php endif; ?>
