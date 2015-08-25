@@ -43,9 +43,9 @@
 	      			<li class="nav-item"><a href="#">ABOUT US</a></li>
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
-	      			<li>
+	      			
 
-	      			<li class="btn btn-danger btn-lg search-button" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+	      			<!-- <li class="btn btn-danger btn-lg search-button" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
 	      			<br>
 	      			<form class="navbar-form navbar-right" role="search">
         				<div class="form-group">
@@ -53,7 +53,19 @@
         				</div>
         			<button type="submit" class="btn btn-default">Submit</button>
       				</form>
-      				</li>
+      				</li> -->
+
+      				<li><a class="btn btn-danger btn-lg" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#" id="login"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+    <div id="popover-content" class="hide">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <input type="text" placeholder="Search" class="form-control" maxlength="5">
+            <button type="submit" class="btn btn-primary btn-danger">Go!</button>
+        </div>
+
+        
+      </form>
+    </div>
 	      		</ul>
 	      		
 				

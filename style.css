@@ -215,3 +215,13 @@ li.categories>a:link {
 	margin-right: 50px;
 	padding-bottom: 5px;
 }
+
+.form-control {
+	width:50px;
+	float:left;
+	margin-right: 5px;
+}
+.popover {
+	max-width:285px;
+	position:relative;
+}
