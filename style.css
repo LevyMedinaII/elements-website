@@ -225,3 +225,9 @@ li.categories>a:link {
 	max-width:285px;
 	position:relative;
 }
+
+.search-button {
+	background: none;
+	border: none;
+}
+
