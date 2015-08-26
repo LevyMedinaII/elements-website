@@ -71,8 +71,7 @@ ul{
 }
 
 body {
-	padding-left: 120px;
-	padding-right: 120px;
+	
 	padding-top: 130px;
 }
 
@@ -231,3 +230,15 @@ li.categories>a:link {
 	border: none;
 }
 
+#footer {
+	background-color: #81320A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+#contentwrapper {
+	margin-left: 120px;
+	margin-right: 120px;
+}

@@ -90,10 +90,10 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
 <div class="cleared"></div>
 
 </div><!-- Closes Main -->
-</body>
+
 
 <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
+</body>
 <?php get_footer(); ?>
