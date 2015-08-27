@@ -9,17 +9,25 @@ Template Name: Article Page
 <div class="article">
 <div class="article-pic">
 	<?php if ( has_post_thumbnail() ) {
-	the_post_thumbnail(array(920,920));
+	the_post_thumbnail(array(1000,1000));
 
 	}  ?>
 </div>
+<div class="row">
+<div class="col-md-9">
 <div class="article-content">
 
 <h2 class="article-title"><?php the_title(); ?></h2>
 <hr>
  	 <?php the_content(); ?>
  <?php echo get_the_date(); ?>
- </div>
+</div>
+</div>
+<div class="col-md-3">
+	<?php get_sidebar(); ?>
+</div>
+ 
+</div>
 </div> 
 </div>
 

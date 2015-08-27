@@ -11,7 +11,7 @@
 $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
 <?php endif; 
 		echo '<div class="row">
-				<div class="col-sm-2"
+				
 				<div class="recent-post">
 
 					<h5 class="recent-post-title"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>

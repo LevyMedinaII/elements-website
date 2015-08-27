@@ -210,8 +210,7 @@ li.categories>a:link {
 .wrapper {
 	background-color: #FCEBEE;
 	padding-top: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
+	
 	padding-bottom: 5px;
 }
 
@@ -241,4 +240,12 @@ li.categories>a:link {
 #contentwrapper {
 	margin-left: 120px;
 	margin-right: 120px;
+}
+
+.recent-post-image {
+	width:150px;
+}
+
+.recent-post-title:link, .recent-post-title:visited {
+	text-decoration: none;
 }
