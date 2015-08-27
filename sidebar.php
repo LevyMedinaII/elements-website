@@ -1,20 +1,18 @@
 <div id="sidebar">
-<h2>Latest Articles</h2>
+<h3>Latest Articles</h3>
+<br>
 <ul>
 <?php
 	$args = array( 'numberposts' => '5' );
 	$recent_posts = wp_get_recent_posts( $args );
 	foreach( $recent_posts as $recent ){
-		if (has_post_thumbnail( $recent->ID ) ): ?>
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent->ID ), 'single-post-thumbnail' ); ?>
-<?php else :
-$image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
-<?php endif; 
+		 ?>
+<?php 
 		echo '<div class="row">
 				
 				<div class="recent-post">
 
-					<h5 class="recent-post-title"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>
+					<h5 ><a class="recent-post-title" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>
 
 				</div>
 			</div>';
