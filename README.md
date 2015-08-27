@@ -31,4 +31,9 @@ For guidelines in editting the theme, go to http://codex.wordpress.org/
   
 (2) Adding an article (post)
 
--In your dashboard, go to posts and select 'Add New.' Input the name of the article and the content. To set the thumbnail or the featured image go to the lower right portion of the page and select 'Set featured image'. You may upload a new file or select one from your media library. Select 'single.php' as the template.
+-In your dashboard, go to posts and select 'Add New.' Input the name of the article and the content. To set the thumbnail or the featured image go to the lower right portion of the page and select 'Set featured image'. You may upload a new file or select one from your media library. You may add additonal images through the content of the post itself. The syntax is as follows:
+
+img src="/directory/file.jpg"
+
+You may set the image to certain sizes by adding a class and setting the size in the stylesheet for that class or you can simple add a code like this [ style="width:100px;" ] within the tag.
+Select 'single.php' as the template.
