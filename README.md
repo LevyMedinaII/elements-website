@@ -27,5 +27,8 @@ For guidelines in editting the theme, go to http://codex.wordpress.org/
 
 (1) Adding a section (category)
 
-  -In your dashboard, go to categories and select 'Add New.' Input the name of the section and slug (optional). Slug equivalents to the url of your section, i.e. buhay-celadon will give you http://localhost/wordpress/categories/buhay-celadon. Next create the page for your section. Go to pages and select 'Add New.' Input the name of the page exactly as the name of the section or category. Select 'category.php' as the template for the page so that the page will function as a section page.
+  -In your dashboard, go to categories and select 'Add New.' Input the name of the section and slug (optional). Slug equivalents to the url of your section, i.e. 'buhay-celadon' will give you http://localhost/wordpress/categories/buhay-celadon. Next create the page for your section. Go to pages and select 'Add New.' Input the name of the page exactly as the name of the section or category. Select 'category.php' as the template so that the page will function as a section page.
   
+(2) Adding an article (post)
+
+-In your dashboard, go to posts and select 'Add New.' Input the name of the article and the content. To set the thumbnail or the featured image go to the lower right portion of the page and select 'Set featured image'. You may upload a new file or select one from your media library. Select 'single.php' as the template.
