@@ -106,13 +106,7 @@ li.nav-item{
 	margin-left: 15px;
 }
 
-/*#wrapper {
-	padding-right: 50px;
-	padding-left: 50px;
-	border-left: 10px;
-	border-right: 10px;
-	border-color: black;
-}*/
+
 
 .post-box {
 	/*border: 2px;
@@ -120,7 +114,7 @@ li.nav-item{
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding:10px;
-	background: url(images/placepuppy.jpg) top no-repeat;
+	background-image: url(images/placepuppy.jpg) top no-repeat;
 	background-size:100%;
 	height:300px;
 	position: relative;
@@ -215,7 +209,7 @@ li.categories>a:link {
 }
 
 .form-control {
-	width:50px;
+	width:190px;
 	float:left;
 	margin-right: 5px;
 }

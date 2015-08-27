@@ -48,7 +48,7 @@ if (function_exists('has_post_thumbnail')) {
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 <?php else :
-$image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
+$image = get_bloginfo( 'template_url') . '/images/placepuppy.jpg'; ?>
 <?php endif; ?>
 
 <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">

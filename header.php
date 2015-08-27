@@ -43,13 +43,13 @@
 	      			<li class="nav-item"><a href="#">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
       				<li> <!-- The search button -->
-      					<a class="btn btn-danger btn-lg search-button" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#" id="login">
+      					<a class="btn btn-danger btn-lg search-button" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" id="login">
       						<span class="glyphicon glyphicon-search" aria-hidden="true">
       						</span>
       					</a>
       				</li>
     				<div id="popover-content" class="hide"> <!-- Hidden search form -->
-      					<form class="form-inline" role="form">
+      					<form class="form-inline" role="form" method="get" action="<?php echo esc_url( home_url( '/' )); ?>"> 
         					<div class="form-group">
           						<input type="text" placeholder="Search" class="form-control" maxlength="5">
             					<button type="submit" class="btn btn-primary btn-danger">Go!</button>

@@ -10,7 +10,7 @@
     <?php if (has_post_thumbnail( $post->ID ) ): ?>
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
     <?php else :
-    $image = get_bloginfo('template_url') . '/images/placepuppyjpg'; ?>
+    $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
     <?php endif; ?>
         <div class="row">
             <div class="col-sm-6 col-md-10">
