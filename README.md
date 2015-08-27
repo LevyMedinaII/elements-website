@@ -11,3 +11,5 @@ The theme has the following:
   -functions.php which is the file where you activate some built-in wordpress functions
   -style.css which is the file where you customize the look of the theme parts, this will overwrite the bootstrap css
   -bootstrap folder which contains the css and js framework used to make our lives easier
+
+For guidelines in editting the theme, go to http://codex.wordpress.org/ 
