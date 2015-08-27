@@ -20,7 +20,7 @@
 	            	<div class="col-md-10">Follow Us on Twitter!</div>
 	            </div>
 	            <div class="row">
-	            	<div class="col-md-2"><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook1.png"/></a></div>
+	            	<div class="col-md-2"><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></a></div>
 	            	<div class="col-md-10">Follow Us on Instagram!</div>
 	            </div>
 	    </span>
