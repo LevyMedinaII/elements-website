@@ -51,7 +51,7 @@
     				<div id="popover-content" class="hide"> <!-- Hidden search form -->
       					<form class="form-inline" role="form" method="get" action="<?php echo esc_url( home_url( '/' )); ?>"> 
         					<div class="form-group">
-          						<input type="text" placeholder="Search" class="form-control" maxlength="5">
+          						<input type="text" placeholder="Search" class="form-control" maxlength="200">
             					<button type="submit" class="btn btn-primary btn-danger">Go!</button>
        						 </div>
       					</form>

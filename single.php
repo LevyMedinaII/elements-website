@@ -36,10 +36,8 @@ Template Name: Article Page
 
 <h2 class="article-title"><?php the_title(); ?><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2> 
 <hr>
-	<div class="fb-share-button" 
-        data-href="<?php get_post_permalink(); ?>" 
-        data-layout="button_count">
-    </div>
+	
+    
  	 <?php the_content(); ?> <!-- displays article content -->
  <?php echo get_the_date(); ?>
 </div> <!-- Closes article-content -->

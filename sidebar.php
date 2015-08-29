@@ -1,3 +1,12 @@
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="sidebar">
 <h3>Latest Articles</h3>
 <br>
@@ -19,6 +28,11 @@
 	}
 ?>
 </ul>
+<div class="fb-follow" data-href="https://www.facebook.com/CeladonElementsMagazine" data-layout="standard" data-show-faces="true"></div>
+<div class="fb-share-button" 
+        data-href="<?php get_post_permalink(); ?>" 
+        data-layout="button_count">
+    </div>
 </div>
 
 <!-- <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
