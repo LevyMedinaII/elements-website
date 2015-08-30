@@ -2,9 +2,8 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <div id="footer" class="container-fluid">
 	<div class="col-md-4">
-		<h5>Elements Magazine</h5>
-		<h5>Ateneo Celadon</h5>
-		<h6>This website was developed by the Publications Department.</h6>
+		<h5>© Elements Magazine | Ateneo Celadon</h5>
+		<h6>Powered by the Publications Department of <a class="footer-link" href="http://ateneo-celadon.org/">Ateneo Celadon</a></h6>
 	</div>
 	<div class="col-md-4">
 		<span class="navbar-right">

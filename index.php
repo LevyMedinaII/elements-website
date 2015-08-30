@@ -1,6 +1,13 @@
-<!--Elements Home Page Created by Levy V. Medina II-->
+<!--Elements Home Page Created by Levy V. Medina II--><?php
+/**
+ * Template Name: Home Page
+ *
+ * @package WordPress
+ * @subpackage Elements
+ * @since Elements 1.0
+ */?>
 <?php get_header(); ?> 
-<body>
+<body <?php body_class( $class ); ?>>
        
 <?php if (is_home()): ?>
 

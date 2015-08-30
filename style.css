@@ -187,7 +187,7 @@ li.categories>a:link {
 	text-align: justify;
 	margin-left:35px;
 	font-size: 16px;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	font-family: Futura,Trebuchet MS,Arial,serif; 
 	line-height: 30px;
 	
 }
@@ -217,7 +217,7 @@ li.categories>a:link {
 }
 
 .wrapper {
-	background-color: #FCEBEE;
+	
 	padding-top: 10px;
 	
 	padding-bottom: 5px;
@@ -267,4 +267,9 @@ li.categories>a:link {
 .article-author {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 	
+}
+
+a.footer-link:link, a.footer-link:visited {
+	
+	color:white;
 }

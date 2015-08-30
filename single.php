@@ -7,7 +7,7 @@ Template Name: Article Page
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Your Website Title" />
     <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="<?php echo get_bloginfo('template_url') ?>/images/logo.png" />
+    <meta property="og:image"         content="<?php echo get_template_directory_uri()  ?>/images/logo.png" />
 </head>
 <body>
 <div id="fb-root"></div>

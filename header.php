@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <head>
-<title>Elements Magazine: Ateneo Celadon's Official Publication</title>
+<title><?php wp_title(); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"> <!-- links the style.css -->
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +33,7 @@
 				
 	      		<ul class="nav navbar-nav "> <!-- Navbar items -->
 	      			
-	      			<li class="nav-item"><a href="http://localhost/wordpress">HOME<span class="sr-only">(current)</span></a></li>
+	      			<li class="nav-item"><a href="<?php echo get_settings('home'); ?>">HOME<span class="sr-only">(current)</span></a></li>
 	      			<li class="dropdown nav-item" >
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
@@ -66,6 +67,7 @@
 	</nav>
 	</div> <!-- Closes header -->
 </div> <!-- Closes wrapper -->
+<?php wp_head(); ?>
 </head>
 
 
