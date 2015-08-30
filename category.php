@@ -9,41 +9,15 @@ Template Name: Category Page
 
 <div id="contentwrapper">
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="topPost">
-  <h2 class="pageTitle"> <!-- <a class="pageTitle" href="<?php the_permalink() ?>"> --> <?php the_title(); ?> <!-- </a> --> </h2>
-  <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
-<div class="cleared"></div>
-</div>
-	<?php endwhile; else: endif; ?>
 
-<?php query_posts('category_name='.get_permalink().'&post_status=publish,future');?>
 
 <?php if (have_posts()) : ?>
   <div class="row">
 <?php while (have_posts()) : the_post(); ?>
 
-<?php if (function_exists('wp_list_comments')): ?>
-<div <?php post_class(topPost); ?>>
 
-<?php else : ?>
-<div class="topPost">
-<?php endif; ?>
 <?php $postid = get_the_ID(); ?> 
-<!-- <?php
-$thumbnail = '';
-if (function_exists('has_post_thumbnail')) {
-    if ( has_post_thumbnail() ) {
-         $thumbnail = get_the_post_thumbnail($postid->ID,'thumbnail');
-    }
 
-}
-?>
-
-  <div class="post-box" style="background-image: url('<?php echo $thumbnail; ?>')">
-  <?php if ( has_post_thumbnail() ) {
-  
-}  ?> -->
 <div class="col-md-4">
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
@@ -67,7 +41,7 @@ $image = get_bloginfo( 'template_url') . '/images/placepuppy.jpg'; ?>
 </div> <!-- Closes topPost -->
 
 </div>
-</div>
+
 <?php endwhile; ?>
 </div>
 <?php else : ?>
@@ -83,6 +57,7 @@ $image = get_bloginfo( 'template_url') . '/images/placepuppy.jpg'; ?>
 <div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 <div class="cleared"></div>
+</div>
 </div>
 </div> <!-- Closes contentwrapper-->
 
