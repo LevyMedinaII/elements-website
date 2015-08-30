@@ -189,7 +189,7 @@ li.categories>a:link {
 	font-size: 18px;
 	font-family: Palatino Linotype,Times,Arial,serif; 
 	line-height: 30px;
-	
+	padding-top: 30px;
 }
 
 .search-bar{
@@ -245,7 +245,7 @@ li.categories>a:link {
 	padding-right: 40px;
 	padding-left: 40px;
 	color:white;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif;   
 }
 
 #contentwrapper {
@@ -259,7 +259,7 @@ li.categories>a:link {
 
 .recent-post-title:link, .recent-post-title:visited {
 	text-decoration: none;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif;  
 	font-size:20px;
 	color:#333;
 	
@@ -270,11 +270,15 @@ li.categories>a:link {
 }
 
 .article-author {
-	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif;  
 	
 }
 
 a.footer-link:link, a.footer-link:visited {
 	
 	color:white;
+}
+
+.footer-text {
+	margin-top:9px;
 }

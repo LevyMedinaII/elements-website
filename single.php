@@ -34,7 +34,7 @@ Template Name: Article Page
 <div class="col-md-9">
 <div class="article-content">
 
-<h2 class="article-title"><?php the_title(); ?><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2> 
+<h2 class="article-title"><?php the_title(); ?><br><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2> 
 <hr>
 	
     
