@@ -40,7 +40,7 @@ Select 'single.php' as the template.
 
 (3) Adding a menu item
 
-- In your dashboard, go to Appearance > Editor. Then, go to the header.php file where the navigation menu is located. To add a menu item, insert the following code inside the unordered list: (excluding the <!-- -->)
+- In your dashboard, go to Appearance > Editor. Then, go to the header.php file where the navigation menu is located. To add a menu item, insert the following code inside the unordered list: (include <>)
 
-   <!--   <li class="nav-item"><a href="#">*Name of List Item</a></li>    -->
+   li class="nav-item"><a href="#">*Name of List Item</a></li
 
