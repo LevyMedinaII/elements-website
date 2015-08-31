@@ -71,7 +71,6 @@ ul{
 }
 
 body {
-	
 	padding-top: 130px;
 }
 
@@ -286,4 +285,9 @@ a.footer-link:link, a.footer-link:visited {
 .icon:link, .icon:visited {
 	text-decoration: none;
 	color:#fff;
+}
+
+.menu {
+	background-color: #fff;
+
 }
