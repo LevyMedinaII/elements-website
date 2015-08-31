@@ -291,3 +291,7 @@ a.footer-link:link, a.footer-link:visited {
 	background-color: #fff;
 
 }
+
+.navbar-brand {
+	padding: 0px 0px;
+}
