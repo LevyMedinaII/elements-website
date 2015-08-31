@@ -282,3 +282,8 @@ a.footer-link:link, a.footer-link:visited {
 .footer-text {
 	margin-top:9px;
 }
+
+.icon:link, .icon:visited {
+	text-decoration: none;
+	color:#fff;
+}

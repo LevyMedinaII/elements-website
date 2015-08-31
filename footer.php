@@ -11,16 +11,22 @@
 					<div class="col-md-12" style=" font-size: 18px;">Follow Us: </div>
 				</div>
 				<div class="row">
-	            	<div class="col-md-2"><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook1.png"/></a></div>
+					<a class="icon" href="https://www.facebook.com/CeladonElementsMagazine">
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook1.png"/></div>
 	            	<div class="col-md-10 footer-text">Like us on Facebook!</div>
+	            	</a>
 	            </div>
 	            <div class="row">
-	            	<div class="col-md-2"><a class="icon" href="https://twitter.com/ElementsCeladon"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/Twitter_logo_white.png"/></a></div>
+	            	<a class="icon" href="https://twitter.com/ElementsCeladon">
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/Twitter_logo_white.png"/></div>
 	            	<div class="col-md-10 footer-text">Follow Us on Twitter!</div>
+	            	</a>
 	            </div>
 	            <div class="row">
-	            	<div class="col-md-2"><a class="icon" href="https://www.facebook.com/CeladonElementsMagazine"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></a></div>
+	            	<a class="icon" href="https://www.facebook.com/CeladonElementsMagazine">
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></div>
 	            	<div class="col-md-10 footer-text">Follow Us on Instagram!</div>
+	            	</a>
 	            </div>
 	    </span>
 	</div>
