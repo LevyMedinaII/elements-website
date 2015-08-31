@@ -37,3 +37,10 @@ img src="/directory/file.jpg"
 
 You may set the image to certain sizes by adding a class and setting the size in the stylesheet for that class or you can simple add a code like this [ style="width:100px;" ] within the tag.
 Select 'single.php' as the template.
+
+(3) Adding a menu item
+
+- In your dashboard, go to Appearance > Editor. Then, go to the header.php file where the navigation menu is located. To add a menu item, insert the following code inside the unordered list:
+
+   <li class="nav-item"><a href="#">*Name of List Item</a></li>
+
