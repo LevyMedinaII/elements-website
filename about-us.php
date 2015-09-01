@@ -24,5 +24,8 @@ Template Name: About Us
 			Associate Vice-President for Publications, Faith Madeleine Ong
  		</p>
  	</div>
+ 	<script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
+
  <?php get_footer(); ?>

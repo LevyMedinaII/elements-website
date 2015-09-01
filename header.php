@@ -41,8 +41,8 @@
 	      					<?php wp_list_categories('title_li='); ?>
 	      				</ul> <!-- Lists categories added by the admin -->
 	      			</li>
-	      			<li class="nav-item"><a href="#">ABOUT US</a></li>
-	      			<li class="nav-item"><a href="#">CELADON</a></li>
+	      			<li class="nav-item"><a href="http://localhost/wordpress/about-us-3/">ABOUT US</a></li>
+	      			<li class="nav-item"><a href="http://ateneo-celadon.org/">CELADON</a></li>
 	      			<li class="nav-item"><a href="#">PAST ISSUES</a></li>
       				<li> <!-- The search button -->
       					<a class="btn btn-danger btn-lg search-button" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" id="login">
