@@ -299,3 +299,29 @@ a.footer-link:link, a.footer-link:visited {
 .navbar-brand {
 	padding: 0px 0px;
 }
+
+.team-pic {
+	width:1035px;
+	margin-left:35px;
+}
+
+.team-des {
+	text-align: justify;
+	margin-left:35px;
+	font-size: 18px;
+	font-family: Palatino Linotype,Times,Arial,serif; 
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.about-us {
+	padding-left: 125px;
+	padding-right: 150px;
+
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 45px;
+	
+	margin-top:10px;
+	margin-bottom:20px;
+}
