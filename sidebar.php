@@ -16,11 +16,6 @@
 	$recent_posts = wp_get_recent_posts( $args );
 	foreach( $recent_posts as $recent ){
 		 ?>
-     <?php if (has_post_thumbnail( $recent->ID ) ): ?>
-    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent->ID ), 'single-post-thumbnail' ); ?>
-    <?php else :
-    $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
-    <?php endif; ?>
 <?php 
 		echo '
 				
