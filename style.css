@@ -177,13 +177,22 @@ li.categories>a:link {
 .article-title {
 	color:#83120a;
 	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif; 
-	
+	position:absolute;
+	float:bottom;
+	bottom:-50px;
+	background-color: white;
+	width:800px;
+	padding: 50px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin-left: 70px;
 
-	
+
+
 }
 
 .article-pic {
-
+	position:relative;
 }
 
 .article-content {

@@ -27,14 +27,14 @@ Template Name: Article Page
 <div class="article-pic"> <!-- Displays featured image of the article -->
 	<?php if ( has_post_thumbnail() ) {
 	the_post_thumbnail(array(1000,1000));
-
 	}  ?>
+  <h2 class="article-title"><?php the_title(); ?><br><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2>
 </div> <!--Closes article-pic-->
 <div class="row">
-<div class="col-md-9">
+<div class="col-md-9 col-xs-offset-1">
 <div class="article-content">
 
-<h2 class="article-title"><?php the_title(); ?><br><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2> 
+ 
 <hr>
 	
     
@@ -42,9 +42,7 @@ Template Name: Article Page
  <?php echo get_the_date(); ?>
 </div> <!-- Closes article-content -->
 </div> <!-- Closes col-md-9 -->
-<div class="col-md-3">
-	<?php get_sidebar(); ?>
-</div>
+
  
 </div> <!-- Closes row -->
 </div> <!--Closes article-->
@@ -58,5 +56,5 @@ Template Name: Article Page
 <script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
-<?php get_sidebar(); ?> <!-- Calls the sidebar.php -->
+ <!-- Calls the sidebar.php -->
 <?php get_footer(); ?>	<!-- Calls the footer.php -->
