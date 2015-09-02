@@ -12,19 +12,24 @@
 <br>
 <ul>
 <?php
-	$args = array( 'numberposts' => '5' );
+	$args = array( 'numberposts' => '3' );
 	$recent_posts = wp_get_recent_posts( $args );
 	foreach( $recent_posts as $recent ){
 		 ?>
+     <?php if (has_post_thumbnail( $recent->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent->ID ), 'single-post-thumbnail' ); ?>
+    <?php else :
+    $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
+    <?php endif; ?>
 <?php 
-		echo '<div class="row">
+		echo '
 				
-				<div class="recent-post">
+				<div class="col-md-4">
+
 
 					<h5 ><a class="recent-post-title" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>
 
-				</div>
-			</div>';
+				</div>';
 	}
 ?>
 </ul>
