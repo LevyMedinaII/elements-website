@@ -13,14 +13,15 @@
 
 <div class="container">
     <div id = "content">
-    <?php while(have_posts()) :the_post(); ?>
-    <?php if (has_post_thumbnail( $post->ID ) ): ?>
-    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-    <?php else :
-    $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
-    <?php endif; ?>
+    
         <div class="row">
-            <div class="col-sm-6 col-md-10">
+            <?php while(have_posts()) :the_post(); ?>
+            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <?php else :
+            $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
+            <?php endif; ?>
+            <div class="col-md-4">
                 <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
                     <div class="post-inside">
                     <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
@@ -34,8 +35,9 @@
 
                 </div> <!-- Closes post-box -->
             </div>
+        <?php endwhile; ?>
         </div> <!-- Closes row -->
-    <?php endwhile; ?>
+
         
     </div> <!-- Closes content -->
     </div> <!-- Closes container -->
