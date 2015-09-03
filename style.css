@@ -72,6 +72,7 @@ ul{
 
 body {
 	padding-top: 130px;
+	font-color: #84120a;
 }
 
 .navbar-default {
@@ -177,16 +178,8 @@ li.categories>a:link {
 .article-title {
 	color:#83120a;
 	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif; 
-	position:absolute;
-	float:bottom;
-	bottom:-50px;
+	
 	background-color: white;
-	width:800px;
-	padding: 50px;
-	padding-top: 40px;
-	padding-bottom: 30px;
-	margin-left: 70px;
-
 
 
 }
@@ -269,16 +262,32 @@ li.categories>a:link {
 	width:150px;
 }
 
-.recent-post-title:link, .recent-post-title:visited {
+.recent-post-title>a:link, .recent-post-title>a:visited {
 	text-decoration: none;
 	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif;  
-	font-size:20px;
-	color:#333;
+	font-size:25px;
+	color:black;
+	font-color:#84120a;
 	
 }
 
-.recent-post-title:hover {
+.recent-post-title>a:hover {
 	color:#83120a;
+}
+
+.recent-post-title {
+	background-color: white;
+	vertical-align: bottom;
+	opacity: 0.6;
+	float: bottom;
+   	vertical-align: text-bottom;
+   	position: absolute;
+   	bottom: 0px;
+   	left: 0px;
+   	right: 0px;
+   	padding:20px;
+   	font-family: Century Gothic,Trebuchet MS,Arial,sans-serif;
+
 }
 
 .article-author {
@@ -333,4 +342,11 @@ a.footer-link:link, a.footer-link:visited {
 	
 	margin-top:10px;
 	margin-bottom:20px;
+}
+
+.recent-post {
+	height:250px;
+	background-image: url(images/placepuppy.jpg) top no-repeat;
+	background-size:100%;
+
 }

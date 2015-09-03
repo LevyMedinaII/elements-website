@@ -8,22 +8,29 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="sidebar">
-<h3>Latest Articles</h3>
+
 <br>
 <ul>
+  <h3>Latest Articles</h3>
 <?php
 	$args = array( 'numberposts' => '3' );
 	$recent_posts = wp_get_recent_posts( $args );
 	foreach( $recent_posts as $recent ){
-		 ?>
-<?php 
+		 
+      if (has_post_thumbnail( $recent->ID ) ): 
+       $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent->ID ), 'single-post-thumbnail' ); 
+      else :
+      $image = get_bloginfo( 'template_url') . '/images/placepuppy.jpg'; 
+      endif; 
+
 		echo '
 				
 				<div class="col-md-4">
-
-
-					<h5 ><a class="recent-post-title" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>
-
+          <div class="recent-post" style="background-image: url(' . $image[0] . '); cursor:pointer;" > 
+          <div class="recent-post-title container-fluid"
+					<h5 ><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></h5>
+          </div>
+          </div>
 				</div>';
 	}
 ?>
