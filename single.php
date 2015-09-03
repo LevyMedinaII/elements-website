@@ -31,7 +31,10 @@ Template Name: Article Page
   <h2 class="article-title"><?php the_title(); ?><br><small class="article-author">  by <?php echo get_the_author(); ?> </small></h2>
 </div> <!--Closes article-pic-->
 <div class="row">
+<<<<<<< HEAD
 <div class="col-md-9 col-xs-offset-1">
+=======
+>>>>>>> origin/master
 <div class="article-content">
 
  
@@ -41,7 +44,11 @@ Template Name: Article Page
  	 <?php the_content(); ?> <!-- displays article content -->
  <?php echo get_the_date(); ?>
 </div> <!-- Closes article-content -->
+<<<<<<< HEAD
 </div> <!-- Closes col-md-9 -->
+=======
+	<?php get_sidebar(); ?>
+>>>>>>> origin/master
 
  
 </div> <!-- Closes row -->
