@@ -33,10 +33,10 @@ ul{
 #col-sm-6 col-md-5{
 	display: flex;
 }
-#content{
+/*#content{
 	padding-left: 12.5%;
 	padding-top: 55px;
-}
+}*/
 #header{
 /*	margin-top: 45px;
 	padding-left: 8.33%;

@@ -10,10 +10,11 @@
 <body <?php body_class( $class ); ?>>
        
 <?php if (is_home()): ?>
-
+<?php $args = array( 'numberposts' => '6' ); ?>
+<?php query_posts( $args ); ?>
 <div class="container">
     <div id = "content">
-    
+        <?php $counter = 1; ?>
         <div class="row">
             <?php while(have_posts()) :the_post(); ?>
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -21,20 +22,45 @@
             <?php else :
             $image = get_bloginfo('stylesheet_directory') . '/images/placepuppy.jpg'; ?>
             <?php endif; ?>
-            <div class="col-md-4">
+            <?php if ($counter == 1): ?> 
+            
+              <div class="col-md-12">
                 <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
+                      <div class="post-inside">
+                      <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                      
+                      </div> <!-- Closes post-inside -->
+                      <div class="cleared"></div>
+
+                  </div> <!-- Closes post-box -->
+              </div>
+            <?php $counter = $counter + 1; ?>
+          <?php elseif ($counter == 2 || $counter == 3): ?> 
+          
+            <div class="col-md-6">
+              <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
                     <div class="post-inside">
                     <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-                    <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
-    <!-- <div class="topContent"><?php the_content('(continue reading...)'); ?></div>
-    <span class="topComments btn btn-default"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span>
-    <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
-    <a class="topMore btn btn-default" href="<?php the_permalink() ?>">Read More...</a> -->
+                    
                     </div> <!-- Closes post-inside -->
                     <div class="cleared"></div>
 
                 </div> <!-- Closes post-box -->
             </div>
+           <?php $counter = $counter + 1; ?>
+        <?php else: ?>
+            <div class="col-md-4">
+                <div id="category-name" class="post-box" onclick="location.href='<?php the_permalink() ?>';" style="background-image: url('<?php echo $image[0]; ?>'); cursor:pointer;">
+                    <div class="post-inside">
+                    <h2 class="topTitle"><a class="topTitle" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                    
+                    </div> <!-- Closes post-inside -->
+                    <div class="cleared"></div>
+
+                </div> <!-- Closes post-box -->
+            </div>
+             <?php $counter = $counter + 1; ?>
+          <?php endif; ?>
         <?php endwhile; ?>
         </div> <!-- Closes row -->
 
