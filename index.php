@@ -33,6 +33,7 @@
                       <div class="cleared"></div>
 
                   </div> <!-- Closes post-box -->
+                  &nbsp;
               </div>
             <?php $counter = $counter + 1; ?>
           <?php elseif ($counter == 2 || $counter == 3): ?> 
@@ -46,6 +47,7 @@
                     <div class="cleared"></div>
 
                 </div> <!-- Closes post-box -->
+                &nbsp;
             </div>
            <?php $counter = $counter + 1; ?>
         <?php else: ?>
@@ -58,6 +60,7 @@
                     <div class="cleared"></div>
 
                 </div> <!-- Closes post-box -->
+                &nbsp;
             </div>
              <?php $counter = $counter + 1; ?>
           <?php endif; ?>
