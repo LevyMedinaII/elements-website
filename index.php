@@ -7,7 +7,7 @@
  * @since Elements 1.0
  */?>
 <?php get_header(); ?> 
-<body <?php body_class( $class ); ?>>
+<body <?php body_class(); ?>>
        
 <?php if (is_home()): ?>
 <?php $args = array( 'numberposts' => '6' ); ?>

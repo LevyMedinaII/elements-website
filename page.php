@@ -4,7 +4,7 @@
  ?>
 
 <?php get_header(); ?>
-<body <?php body_class( $class ); ?>>
+<body <?php body_class(); ?>>
 <div class="container">
 	<div id="content" class="page-content">
 		<?php while (have_posts()) : the_post(); ?>

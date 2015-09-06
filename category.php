@@ -3,7 +3,7 @@ Template Name: Category Page
 */ ?>
 
 <?php get_header(); ?>
-<body <?php body_class( $class ); ?>>
+<body <?php body_class(); ?>>
 
 <div id="main">
 

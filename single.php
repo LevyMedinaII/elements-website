@@ -9,7 +9,7 @@ Template Name: Article Page
     <meta property="og:description"   content="Your description" />
     <meta property="og:image"         content="<?php echo get_template_directory_uri()  ?>/images/logo.png" />
 </head>
-<body <?php body_class( $class ); ?>>
+<body <?php body_class(); ?>>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

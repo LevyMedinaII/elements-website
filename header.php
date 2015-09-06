@@ -34,7 +34,7 @@
 				
 	      		<ul class="nav navbar-nav "> <!-- Navbar items -->
 	      			
-	      			<li class="nav-item"><a href="<?php echo get_settings('home'); ?>">HOME<span class="sr-only">(current)</span></a></li>
+	      			<li class="nav-item"><a href="<?php echo get_option('home'); ?>">HOME<span class="sr-only">(current)</span></a></li>
 	      			<li class="dropdown nav-item" >
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
