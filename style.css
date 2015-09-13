@@ -350,3 +350,55 @@ a.footer-link:link, a.footer-link:visited {
 	background-size:100%;
 
 }
+
+.archive-links>h3>a:link, .archive-links>h3>a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+img.attachment-1000x1000.wp-post-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	max-width: 1000px;
+}
+
+img.profile {
+	width: 200px;
+	float: left;
+}
+
+.category-title {
+	font-family: Century Gothic, Trebuchet MS, Arial, sans-serif;
+	color: #84120a;
+}
+
+.archive {
+	font-family: Century Gothic, Trebuchet MS, Arial, sans-serif;
+	font-size: 18px;
+}
+
+.btn > a:link, .btn > a:visited, .btn > a:hover {
+	text-decoration: none;
+}
+
+.robots-nocontent, .sd-block, .sd-social, .sd-social-official, .sd-sharing, .sharedaddy {
+	display: none;
+}
+
+.search-button {
+	visibility: hidden;
+}
+
+img.team-pic {
+	margin-left: 75px;
+}
+
+@media screen and (max-width: 400px) {
+	#logo {
+		width: 100px;
+	}
+}
