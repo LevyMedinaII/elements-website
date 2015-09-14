@@ -12,19 +12,19 @@
 				</div>
 				<div class="row">
 					<a class="icon" href="https://www.facebook.com/CeladonElementsMagazine">
-	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/facebook1.png"/></div>
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo esc_url(get_template_directory_uri()) ?>/images/facebook1.png"/></div>
 	            	<div class="col-md-10 footer-text">Like us on Facebook!</div>
 	            	</a>
 	            </div>
 	            <div class="row">
 	            	<a class="icon" href="https://twitter.com/ElementsCeladon">
-	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/Twitter_logo_white.png"/></div>
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo esc_url(get_template_directory_uri()) ?>/images/Twitter_logo_white.png"/></div>
 	            	<div class="col-md-10 footer-text">Follow Us on Twitter!</div>
 	            	</a>
 	            </div>
 	            <div class="row">
 	            	<a class="icon" href="https://www.facebook.com/CeladonElementsMagazine">
-	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo get_bloginfo('template_url') ?>/images/instagram.png"/></div>
+	            	<div class="col-md-2"><img alt="Elements Magazine" id="icon" src="<?php echo esc_url(get_template_directory_uri()) ?>/images/instagram.png"/></div>
 	            	<div class="col-md-10 footer-text">Follow Us on Instagram!</div>
 	            	</a>
 	            </div>
@@ -32,7 +32,7 @@
 	</div>
 </div>
 
-<script src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo esc_url(get_template_directory_uri()) ?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 </html>

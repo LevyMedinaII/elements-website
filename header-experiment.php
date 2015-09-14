@@ -6,7 +6,7 @@
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script> <!-- links to javascript files -->
+    <script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()) ?>/bootstrap/js/bootstrap.min.js"></script> <!-- links to javascript files -->
 
 
 
@@ -22,7 +22,7 @@
 			        <span class="icon-bar"></span>
       			</button> <!-- Navbar toggle button -->
 		      	<a class="navbar-brand" href="http://elements.ateneo-celadon.org/">
-		      		<img alt="Elements Magazine" id="logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
+		      		<img alt="Elements Magazine" id="logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/images/logo.png"/>
 				</a> <!-- Displays the Elements Magazine logo -->
 
 	      	</div>

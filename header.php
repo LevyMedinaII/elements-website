@@ -7,7 +7,7 @@
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="<?php echo get_bloginfo('template_url') ?>/bootstrap/js/bootstrap.min.js"></script> <!-- links to javascript files -->
+    <script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()) ?>/bootstrap/js/bootstrap.min.js"></script> <!-- links to javascript files -->
 
 
 
@@ -24,7 +24,7 @@
 			        <span class="icon-bar"></span>
       			</button> <!-- Navbar toggle button -->
 		      	<a class="navbar-brand" href="http://elements.ateneo-celadon.org/">
-		      		<img alt="Elements Magazine" id="logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
+		      		<img alt="Elements Magazine" id="logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/images/logo.png"/>
 				</a> <!-- Displays the Elements Magazine logo -->
 
 	      	</div> <!-- Closes navbar-header -->
@@ -34,7 +34,7 @@
 				
 	      		<ul class="nav navbar-nav "> <!-- Navbar items -->
 	      			
-	      			<li class="nav-item"><a href="<?php echo get_option('home'); ?>">HOME<span class="sr-only">(current)</span></a></li>
+	      			<li class="nav-item"><a href="<?php echo home_url(); ?>">HOME<span class="sr-only">(current)</span></a></li>
 	      			<li class="dropdown nav-item" >
 	      				<a href="#" class="dropdown-toggle" id="sections" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS<span class="caret"></span></a>
 	      				<ul class="dropdown-menu" aria-labelledby="sections">
